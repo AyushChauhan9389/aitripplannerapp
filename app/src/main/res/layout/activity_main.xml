@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+        <ImageView
+            android:id="@+id/vector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/mainimage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image4" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+                <TextView
+                    android:id="@+id/trip_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fontty"
+                    android:gravity="center_horizontal|top"
+                    android:lineSpacingExtra="-5sp"
+                    android:text="@string/trip_on"
+                    android:textAppearance="@style/size48" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/your_own_pe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fontty"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/your_own_pe"
+                    android:textAppearance="@style/size24" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/trip_on_is_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fontty"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_horizontal|top"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/trip_on_is_"
+                    android:textAppearance="@style/size16" />
+
+                <Button
+                    android:id="@+id/loginbutton"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backbutton"
+                    android:fontFamily="@font/fontty"
+                    android:text="@string/start"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:onClick="goToLogin"
+                    />
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backbuttonwhite"
+                    android:fontFamily="@font/fontty"
+                    android:text="@string/start_different"
+                    android:textSize="16sp"
+                    />
+        </LinearLayout>
+
+
+</LinearLayout>

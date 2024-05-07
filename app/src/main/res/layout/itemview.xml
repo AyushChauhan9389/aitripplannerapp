@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:id="@+id/linearlayout1"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map_pin"
+        android:layout_marginRight="10dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/nameplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addname"
+            android:fontFamily="@font/fontty"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/addressplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addname1"
+            android:fontFamily="@font/fontty"
+            android:textSize="16sp"
+            android:textColor="@color/bleck"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

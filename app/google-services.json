@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "679260866997",
+    "firebase_url": "https://mainscept-default-rtdb.firebaseio.com",
+    "project_id": "mainscept",
+    "storage_bucket": "mainscept.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679260866997:android:66f47a7c4d1f0d5e8a31fc",
+        "android_client_info": {
+          "package_name": "com.mad.tripon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqBRU6yYMfghcloAxWwyRfgPiOo6O15bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        >
+        <Button
+            android:id="@+id/logoutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/log_out"
+            android:text="@string/logout"
+            android:drawablePadding="10dp"
+            android:background="@drawable/trans"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/titlemain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Ayush"
+        android:textSize="34sp"
+        android:fontFamily="@font/fontty"
+        android:gravity="center"
+        android:textColor="@color/bleck"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/planname"
+        android:textSize="34sp"
+        android:fontFamily="@font/fontty"
+        android:gravity="center"
+        android:textColor="@color/bleck"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/planname2"
+        android:textSize="18sp"
+        android:paddingRight="80dp"
+        android:paddingLeft="80dp"
+        android:fontFamily="@font/fontty"
+        android:gravity="center"
+        android:textColor="@color/bleck"
+        />
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainbut"
+        android:hint="@string/whereto"
+        android:drawableStart="@drawable/search"
+        android:textAlignment="viewStart"
+        android:paddingLeft="20dp"
+        android:textColor="@color/bleck"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plus"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addmore"
+            android:textSize="15sp"
+            android:fontFamily="@font/fontty"
+            android:textColor="@color/bleck"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbutton"
+        android:fontFamily="@font/fontty"
+        android:text="@string/start1"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:onClick="goToLogin"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbuttonwhite"
+        android:fontFamily="@font/fontty"
+        android:text="@string/start_different1"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
