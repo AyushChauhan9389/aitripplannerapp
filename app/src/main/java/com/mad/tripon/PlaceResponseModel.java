@@ -45,6 +45,10 @@ public class PlaceResponseModel {
             return reference;
         }
 
+        public Geometry getGeometry() {
+            return geometry;
+        }
+
         public class Geometry{
             public Location location;
 

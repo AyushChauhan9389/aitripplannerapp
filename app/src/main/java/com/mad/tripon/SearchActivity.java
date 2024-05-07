@@ -50,6 +50,7 @@ public class SearchActivity extends AppCompatActivity {
             searchEditText.setText(searchText);
         }
         getData(searchText);
+
     }
 
 

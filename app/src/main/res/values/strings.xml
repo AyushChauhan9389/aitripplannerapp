@@ -38,4 +38,9 @@
     <string name="search">Search here</string>
     <string name="addname">Downtown Aurora</string>
     <string name="addname1">43 W. Galena Blvd, Aurora, IL</string>
+    <string name="latitude">lat</string>
+    <string name="hotels">Hotels</string>
+    <string name="FInd">Find all options here</string>
+    <string name="restaurant">Hotels</string>
+    <string name="rest">restaurants</string>
 </resources>
