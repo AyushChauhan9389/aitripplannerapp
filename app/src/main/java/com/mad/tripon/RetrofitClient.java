@@ -14,7 +14,7 @@ public class RetrofitClient {
             .connectTimeout(100, TimeUnit.SECONDS);
     private static Retrofit.Builder builder =
             new Retrofit.Builder()
-                    .baseUrl("https://maps.googleapis.com/maps/api/")
+                    .baseUrl("https://maps.googleapis.com/")
                     .addConverterFactory(GsonConverterFactory.create());
     private static Retrofit retrofit = builder.build();
 

@@ -43,4 +43,10 @@
     <string name="FInd">Find all options here</string>
     <string name="restaurant">Hotels</string>
     <string name="rest">restaurants</string>
+    <string name="dubai_trip">Dubai Trip</string>
+    <string name="entire_townhouse_5_beds">Entire townhouse • 5 beds</string>
+    <string name="entire_townhouse">Price Rating</string>
+    <string name="rating">2</string>
+    <string name="entire_townhous">Rating -</string>
+    <string name="entire_townhousee">"Price Rating- "</string>
 </resources>

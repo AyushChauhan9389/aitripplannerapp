@@ -17,6 +17,12 @@
         android:theme="@style/Theme.TripOn"
         tools:targetApi="31">
         <activity
+            android:name=".ChatFinalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chatActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShowActivity"
             android:exported="false" />
         <activity

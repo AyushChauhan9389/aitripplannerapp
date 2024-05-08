@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/backbutton"
         android:fontFamily="@font/fontty"
-        android:text="@string/start1"
+        android:text="Plan with ai"
         android:textSize="16sp"
         android:textColor="#FFFFFF"
         android:onClick="goToLogin"
@@ -109,8 +109,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/backbuttonwhite"
         android:fontFamily="@font/fontty"
-        android:text="@string/start_different1"
+        android:text="Show Saved"
         android:textSize="16sp"
+        android:id="@+id/fav"
         />
 
 </LinearLayout>

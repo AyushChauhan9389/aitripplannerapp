@@ -27,7 +27,6 @@
                 android:fontFamily="@font/fontty"
                 android:layout_gravity="center"/>
             <Button
-                android:id="@+id/back2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/arrow_left"
@@ -54,7 +53,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+
+                >
 
                 <EditText
                     android:id="@+id/searchbar1"
@@ -68,89 +69,18 @@
                     android:drawablePadding="10dp"
                     android:enabled="false"
                     />
-
-            </LinearLayout>
-
-            <fragment
-                android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:id="@+id/map"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/map"
-                />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/FInd"
-                android:fontFamily="@font/fontty"
-                android:textSize="30sp"
-                android:background="@drawable/trans"
-                android:textColor="@color/bleck"
-                />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp"
-                >
-                <Button
-                    android:id="@+id/restaurant"
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/rest"
-                    android:background="@drawable/backbutton1"
-                    android:textColor="#FFFFFF"
-                    android:fontFamily="@font/fontty"
-                    android:textSize="16sp"
-                    android:onClick="goToRestaurant"
-                    />
-
-                <Button
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/hotel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hotels"
-                    android:background="@drawable/backbutton1"
-                    android:textColor="#FFFFFF"
-                    android:fontFamily="@font/fontty"
-                    android:textSize="16sp"
-                    android:onClick="goToRestaurant"
+                    android:id="@+id/aicontent"
                     />
 
 
+
             </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/lat"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/lng"/>
 
 
-        </LinearLayout>
-            <Button
-                android:layout_marginTop="20dp"
-                android:id="@+id/save_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="save"
-                android:background="@drawable/backbutton1"
-                android:textColor="#FFFFFF"
-                android:fontFamily="@font/fontty"
-                android:textSize="16sp"
-                android:onClick="goToRestaurant"
-                />
+
 
         </LinearLayout>
 

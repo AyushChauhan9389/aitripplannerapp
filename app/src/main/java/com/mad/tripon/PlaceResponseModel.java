@@ -6,7 +6,7 @@ public class PlaceResponseModel {
     public ArrayList<Object> html_attributions;
     public ArrayList<Result> results;
     public String status;
-    public class Result{
+    public static class Result{
         public String formatted_address;
         public Geometry geometry;
         public String icon;

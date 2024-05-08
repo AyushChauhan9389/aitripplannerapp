@@ -25,7 +25,14 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        Button btn = findViewById(R.id.fav);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, ChatFinalActivity.class);
+                startActivity(intent);
+            }
+        });
         searchBar = findViewById(R.id.searchbar);
         searchButton = findViewById(R.id.search_button);
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +44,8 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
         // Initialize Firebase Auth and Database
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference("users");
