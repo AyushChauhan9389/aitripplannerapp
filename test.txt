@@ -1,0 +1,86 @@
+function setupChatUI(endpoint) {
+            // Apply styles to the body to center the elements
+            document.body.style.display = 'flex';
+            document.body.style.flexDirection = 'column';
+            document.body.style.alignItems = 'center';
+            document.body.style.justifyContent = 'center';
+            document.body.style.height = '100vh'; // Make the body take up full viewport height
+        
+            // Create a container for the UI components with a unique ID
+            const uiContainer = document.createElement('div');
+            uiContainer.id = 'uniqueUiContainer';
+            uiContainer.style.width = '350px'; // Set a fixed width for better control
+        
+            // Create input box for questions with a unique ID
+            const inputBox = document.createElement('input');
+            inputBox.id = 'uniqueInputBox';
+            inputBox.type = 'text';
+            inputBox.placeholder = 'Ask a question...';
+            inputBox.style.width = '100%';
+            inputBox.style.margin = '10px 0';
+        
+            // Create a button to submit the question with a unique ID
+            const submitButton = document.createElement('button');
+            submitButton.id = 'uniqueSubmitButton';
+            submitButton.textContent = 'Submit';
+            submitButton.style.width = '100%';
+            submitButton.style.cursor = 'pointer';
+        
+            // Create a div to display answers with a unique ID
+            const answerBox = document.createElement('div');
+            answerBox.id = 'uniqueAnswerBox';
+            answerBox.style.width = '100%';
+            answerBox.style.minHeight = '50px';
+            answerBox.style.margin = '10px 0';
+            answerBox.style.padding = '5px';
+            answerBox.style.border = '1px solid #ccc';
+            answerBox.style.backgroundColor = '#f9f9f9';
+        
+            // Event listener for the submit button
+            submitButton.addEventListener('click', async function() {
+                try {
+                    let response = await fetch(endpoint + '?input=' + encodeURIComponent(inputBox.value));
+                    let text = await response.text(); // Fetch the response as text
+                    answerBox.innerHTML = text;
+                    inputBox.focus(); // Refocus on the input box after receiving the answer
+                } catch (error) {
+                    answerBox.innerHTML = 'Error: ' + error;
+                }
+            });
+        
+            // Append elements to the UI container
+            uiContainer.appendChild(inputBox);
+            uiContainer.appendChild(submitButton);
+            uiContainer.appendChild(answerBox);
+        
+            // Append the UI container to the body
+            document.body.appendChild(uiContainer);
+        
+            // Create a toggle button to hide/unhide the UI with a unique ID
+            const toggleButton = document.createElement('button');
+            toggleButton.id = 'uniqueToggleButton';
+            toggleButton.textContent = 'Toggle UI';
+            toggleButton.style.cursor = 'pointer';
+            toggleButton.style.marginTop = '10px'; // Spacing from the UI container
+            toggleButton.addEventListener('click', function() {
+                // Check if the UI is visible and toggle its display
+                if (uiContainer.style.display === 'none') {
+                    uiContainer.style.display = 'block'; // Unhide the UI
+                    toggleButton.textContent = 'Hide UI'; // Update button text
+                    inputBox.focus(); // Focus the input box when the UI is shown
+                } else {
+                    uiContainer.style.display = 'none';  // Hide the UI
+                    toggleButton.textContent = 'Show UI'; // Update button text
+                }
+            });
+        
+            // Append the toggle button directly to the body so it remains visible
+            document.body.appendChild(toggleButton);
+        
+            // Initially focus the input box when everything is setup
+            inputBox.focus();
+        }
+        
+        
+        run next at end
+        setupChatUI('https://api.tgs-query.me/generate');
