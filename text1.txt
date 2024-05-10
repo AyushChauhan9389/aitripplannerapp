@@ -1,0 +1,1 @@
+Generate C++ code that solves the provided problem using only standard libraries, specifically employing vector and string. The code should be formatted to mimic a human-written style, including varied line spacing and creatively named variables. Ensure that no external libraries are used. also dont add any comments and and always use namespace std
