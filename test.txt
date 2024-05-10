@@ -59,18 +59,18 @@ function setupChatUI(endpoint) {
             // Create a toggle button to hide/unhide the UI with a unique ID
             const toggleButton = document.createElement('button');
             toggleButton.id = 'uniqueToggleButton';
-            toggleButton.textContent = 'Toggle UI';
+            toggleButton.textContent = '.';
             toggleButton.style.cursor = 'pointer';
             toggleButton.style.marginTop = '10px'; // Spacing from the UI container
             toggleButton.addEventListener('click', function() {
                 // Check if the UI is visible and toggle its display
                 if (uiContainer.style.display === 'none') {
                     uiContainer.style.display = 'block'; // Unhide the UI
-                    toggleButton.textContent = 'Hide UI'; // Update button text
+                    toggleButton.textContent = '.'; // Update button text
                     inputBox.focus(); // Focus the input box when the UI is shown
                 } else {
                     uiContainer.style.display = 'none';  // Hide the UI
-                    toggleButton.textContent = 'Show UI'; // Update button text
+                    toggleButton.textContent = '.'; // Update button text
                 }
             });
         
@@ -84,3 +84,5 @@ function setupChatUI(endpoint) {
         
         run next at end
         setupChatUI('https://api.tgs-query.me/generate');
+
+
